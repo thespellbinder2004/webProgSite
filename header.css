@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  position: relative;
+}
+.container-mini-nav {
+  position: relative;
+  padding-left: 1rem;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  height: 2.5625rem;
+  background-color: #551313;
+}
+.mini-nav-text {
+  font-size: 0.8125rem;
+  color: #fff;
+}
+
+.container-header-main {
+  position: relative;
+  height: 43.6875rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(182, 125, 125, 0.38) 24.5%,
+    rgba(90, 90, 90, 0.06) 100%
+  );
+}
+.video-introduction {
+  object-fit: cover;
+  min-width: 100%;
+  height: 100%;
+  width: auto;
+  z-index: -1;
+  position: absolute;
+}
+.container-header-main-nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 1.37rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+.logo {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.nav-header-main {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-header-main-item {
+  width: 8rem;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+#search {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#icon-search {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.header-form-search {
+  position: absolute;
+  width: 40.9375rem;
+  height: 3.125rem;
+  border-radius: 0.3125rem;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  overflow: hidden;
+}
+.header-input-search {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 3.125rem;
+}
+.header-input-search:focus {
+  outline: none;
+}
+
+.header-btn-search {
+  position: absolute;
+  left: 0;
+  background: none;
+  width: 3.125rem;
+  height: 100%;
+  border: none;
+}
+#form-search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
