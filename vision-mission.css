@@ -1,0 +1,9 @@
+.container-vision-mission {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vision-mission {
+  display: flex;
+}
