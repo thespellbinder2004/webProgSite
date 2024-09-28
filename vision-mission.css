@@ -3,7 +3,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 0 30%;
+  gap: 10rem;
 }
 .vision-mission {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-vision-mission {
+  width: 15rem;
+}
+.title-vision-mission {
+  font-size: 3.05rem;
+  color: #b62525;
+}
+.container-vision-mission {
+  font-size: 1.56rem;
 }
