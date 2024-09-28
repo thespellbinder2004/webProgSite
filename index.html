@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="Assets/favicon-16x16.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="tourism.css" />
+    <link rel="stylesheet" href="government-official.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,11 +17,11 @@
       rel="stylesheet"
     />
     <script defer src="script.js"></script>
-    <title>Document</title>
+    <title>Home | Pampanga Province</title>
   </head>
   <body>
     <!-- header, contains nav, video, search etc -->
-    <div class="header">
+    <header class="header">
       <!-- green bar thing -->
       <div class="container-mini-nav">
         <span class="mini-nav-text"
@@ -100,8 +105,134 @@
           <source src="Assets/video-intro.mp4" />
         </video>
       </div>
-    </div>
-    <div class="main-content"></div>
-    <div class="footer"></div>
+    </header>
+    <!-- MAIN CONTENT STARTS HERE -->
+    <main class="main-content">
+      <!-- Start of Our Services Sectino -->
+      <div class="container-our-services">
+        <h1 class="title" id="title-our-services">Our Services</h1>
+        <ul class="container-service-box">
+          <li class="service-box">
+            <img
+              src="Assets/Services Icons/government.png"
+              alt="Gov Logo"
+              class="service-image-icon"
+            />
+            <h1 class="service-title">Government</h1>
+            <p class="service-paragraph">
+              Learn More about the Government and the province.
+            </p>
+          </li>
+          <li class="service-box">
+            <img
+              src="Assets/Services Icons/procurement.png"
+              alt="Gov Logo"
+              class="service-image-icon"
+            />
+            <h1 class="service-title">Procurement</h1>
+            <p class="service-paragraph">Find and aquire goods and services.</p>
+          </li>
+          <li class="service-box">
+            <img
+              src="Assets/Services Icons/report.png"
+              alt="Gov Logo"
+              class="service-image-icon"
+            />
+            <h1 class="service-title">
+              Disbursement <br />
+              Report
+            </h1>
+            <p class="service-paragraph">
+              Track and view your government payments.
+            </p>
+          </li>
+          <li class="service-box">
+            <img
+              src="Assets/Services Icons/donation.png"
+              alt="Gov Logo"
+              class="service-image-icon"
+            />
+            <h1 class="service-title">Donations</h1>
+            <p class="service-paragraph">Donate and improve our province.</p>
+          </li>
+          <li class="service-box">
+            <img
+              src="Assets/Services Icons/partners.png"
+              alt="Gov Logo"
+              class="service-image-icon"
+            />
+            <h1 class="service-title">CSO's</h1>
+            <p class="service-paragraph">
+              Find and acquire goods and services from non Profit Organizations.
+            </p>
+          </li>
+        </ul>
+        <button id="button-more-services">More Services</button>
+      </div>
+      <!-- End of Our Services Sectino -->
+
+      <!-- Start of Tourism Section -->
+      <div class="container-tourism">
+        <hr id="hr-services" />
+        <h1 class="title" id="title-tourism">
+          Explore the beauty of Pampanga!
+        </h1>
+        <div class="container-tourism-content">
+          <img
+            class="tourism-img"
+            src="Assets/images/Bale Dutung 1.jpg"
+            alt="Bale Dutung"
+          />
+          <div class="container-tourism-content-left">
+            <div class="container-tourism-text">
+              <h2 class="tourism-content-title">Kapampangan Cuisine</h2>
+              <p class="tourism-content-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis est, dolorum unde sapiente veritatis odit vitae quas
+                rem aliquid sequi veniam pariatur, itaque laboriosam maiores
+                iste id? Distinctio, quis laudantium.
+              </p>
+            </div>
+            <!-- <div class="dots">
+              <button class="dots-dot"></button>
+              <button class="dots-dot"></button>
+              <button class="dots-dot"></button>
+              <button class="dots-dot"></button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Tourism Section -->
+      <!-- Start of Government Official Section -->
+      <div class="container-government-official">
+        <div class="government-official-text">
+          <h1 class="government-official-name">Dennis G. Garcia</h1>
+          <h3 class="government-official-title">Governor</h3>
+          <p class="government-official-introduction">
+            Dennis "Delta" Garcia Pineda (born May 6, 1974) is a Filipino
+            politician, basketball coach, and businessman from Pampanga.
+            Currently serving as the Governor of Pampanga since 2019, he
+            previously held positions as Vice Governor and Mayor of Lubao. As
+            head coach of the Pampanga Giant Lanterns, he led the team to their
+            first MPBL championship in 2023. He is the son of former governor
+            Lilia Pineda and businessman Rodolfo Pineda.
+          </p>
+          <button class="btn-learn-more">Learn More</button>
+        </div>
+        <div class="government-official-photo">
+          <div class="government-official-octagon"></div>
+          <img
+            id="governor-img"
+            src="Assets/images/Governor.png"
+            alt=""
+            width="350px"
+          />
+          <div class="government-official-reactangle"></div>
+        </div>
+      </div>
+
+      <!-- End of Government Official Section -->
+    </main>
+    <footer></footer>
   </body>
 </html>

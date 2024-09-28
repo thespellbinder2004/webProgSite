@@ -1,0 +1,97 @@
+.container-government-official {
+  position: relative;
+  display: flex;
+  padding: 0 15%;
+  margin-top: 5rem;
+}
+/* Text Section */
+.government-official-text {
+  padding-right: 10rem;
+  width: 60%;
+  position: relative;
+}
+.government-official-name {
+  font-size: 3.16rem;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.government-official-title {
+  color: #ff3131;
+  font-family: "Open Sans";
+  font-size: 1.78rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.government-official-introduction {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1.33rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-left: 3rem;
+}
+.btn-learn-more {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 0.625rem;
+  background: #994545;
+  color: #fff;
+  text-align: center;
+  font-size: 1.78rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-top: 3.38rem;
+}
+/* Photo Section */
+
+.government-official-photo {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  max-height: 600px;
+  width: 40%;
+  display: flex;
+  position: relative;
+}
+.government-official-octagon {
+  position: absolute;
+  width: 15rem;
+  aspect-ratio: 1;
+  --o: calc(50% * tan(-22.5deg));
+  clip-path: polygon(
+    var(--o) 50%,
+    50% var(--o),
+    calc(100% - var(--o)) 50%,
+    50% calc(100% - var(--o))
+  );
+  background: #994545;
+  z-index: -1;
+  top: 1rem;
+  right: 10%;
+}
+.government-official-reactangle {
+  position: absolute;
+  width: 50%;
+  height: 7.375rem;
+  border-radius: 1.25rem;
+  background: #994545;
+  z-index: -1;
+  bottom: 1rem;
+}
+
+#governor-img {
+  display: block;
+  margin: auto;
+  z-index: 1;
+}
