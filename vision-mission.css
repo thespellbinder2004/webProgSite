@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 30%;
-  gap: 10rem;
+  gap: 5rem;
 }
 .vision-mission {
   display: flex;
@@ -16,9 +16,30 @@
   width: 15rem;
 }
 .title-vision-mission {
-  font-size: 3.05rem;
+  font-size: 3.16rem;
   color: #b62525;
 }
-.container-vision-mission {
-  font-size: 1.56rem;
+.content-vision-mission {
+  font-size: 1.78rem;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .container-vision-mission {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 800px) {
+  .img-vision-mission {
+    width: 10rem;
+  }
+  .container-vision-mission {
+    padding: 0 5%;
+    gap: 2rem;
+  }
+  .title-vision-mission {
+    font-size: 2.37rem;
+  }
+  .content-vision-mission {
+    font-size: 1.33rem;
+  }
 }

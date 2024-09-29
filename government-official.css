@@ -9,6 +9,8 @@
   padding-right: 10rem;
   width: 60%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .government-official-name {
   font-size: 3.16rem;
@@ -43,7 +45,7 @@
   width: 20rem;
   height: 4rem;
   border-radius: 0.625rem;
-  background: #994545;
+  background: #a90505;
   color: #fff;
   text-align: center;
   font-size: 1.78rem;
@@ -52,6 +54,28 @@
   line-height: normal;
   border: none;
   margin-top: 3.38rem;
+  position: relative;
+}
+.btn-learn-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0.625rem;
+  border: 0.3rem solid #a90505;
+  transition: all 300ms ease-in-out;
+  transition-property: all;
+}
+
+.btn-learn-more:hover::before {
+  cursor: pointer;
+  top: -0.8rem;
+  bottom: -0.8rem;
+  left: -0.8rem;
+  right: -0.8rem;
 }
 /* Photo Section */
 
@@ -75,7 +99,7 @@
     calc(100% - var(--o)) 50%,
     50% calc(100% - var(--o))
   );
-  background: #994545;
+  background: #a90505;
   z-index: -1;
   top: 1rem;
   right: 10%;
@@ -85,12 +109,13 @@
   width: 50%;
   height: 7.375rem;
   border-radius: 1.25rem;
-  background: #994545;
+  background: #a90505;
   z-index: -1;
   bottom: 1rem;
 }
 .governor-img-mobile {
   margin: auto;
+  width: 40vw;
   display: none;
 }
 .governor-img {
@@ -102,12 +127,50 @@
   .container-government-official {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
   }
   .governor-img {
     display: none;
-    width: 0.8vw;
   }
   .governor-img-mobile {
     display: block;
+  }
+  .government-official-octagon {
+    display: none;
+  }
+  .government-official-reactangle {
+    display: none;
+  }
+  .government-official-text {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+  }
+  .government-official-name {
+    text-align: center;
+    font-size: 2.37rem;
+  }
+  .government-official-title {
+    font-size: 1.78rem;
+    text-align: center;
+  }
+  .government-official-introduction {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .btn-learn-more {
+    width: 16rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.56rem;
+  }
+  .government-official-introduction {
+    margin: 0;
+  }
+  @media (max-width: 400px) {
+    .government-official-introduction {
+      font-size: 0.75rem;
+    }
   }
 }

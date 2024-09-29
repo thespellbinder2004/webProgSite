@@ -92,7 +92,7 @@
               >
             </li>
           </ul>
-          <a href="" id="search">
+          <a id="search" for="search-form">
             <img
               id="icon-search"
               src="Assets/Icons/Icon - Nav Search.png"
@@ -103,7 +103,7 @@
             <img id="icon-menu" src="Assets/Icons/Icon - Menu.png" alt="" />
           </a>
         </nav>
-        <form action="" class="header-form-search">
+        <form action="" class="header-form-search" id="search-form">
           <input class="header-input-search" type="text" />
           <button class="header-btn-search">
             <img
@@ -186,7 +186,7 @@
 
       <!-- Start of Tourism Section -->
       <div class="container-tourism">
-        <hr id="hr-services" />
+        <hr id="hr-tourism" />
         <h1 class="title" id="title-tourism">
           Explore the beauty of Pampanga!
         </h1>
@@ -207,17 +207,25 @@
               </p>
             </div>
             <div class="dots">
-              <button class="dots-dot"></button>
+              <button class="dots-dot dots-dot-active"></button>
               <button class="dots-dot"></button>
               <button class="dots-dot"></button>
               <button class="dots-dot"></button>
             </div>
             <div class="arrows">
               <button class="arrows-arrow">
-                <img src="Assets/Icons/arrow-left.png" alt="" />
+                <img
+                  class="arrows-arrow-img"
+                  src="Assets/Icons/arrow-left.png"
+                  alt=""
+                />
               </button>
               <button class="arrows-arrow">
-                <img src="Assets/Icons/arrow-right.png" alt="" />
+                <img
+                  class="arrows-arrow-img"
+                  src="Assets/Icons/arrow-right.png"
+                  alt=""
+                />
               </button>
             </div>
           </div>
@@ -329,8 +337,8 @@
     </main>
     <footer>
       <div class="footer-text">
-        <h2 class="footer-text-heading">Provincial Government of Pampanga</h2>
-        <p>
+        <h2 id="footer-text-heading">Provincial Government of Pampanga</h2>
+        <p class="footer-text-content">
           Capitol Blvd, San Fernando, 2000 Pampanga
           <br />
           <br />
@@ -361,18 +369,20 @@
         </p>
       </div>
       <div class="footer-map">
-        <h2>Pampanga District Hospitals</h2>
+        <h2 id="footer-map-title">Pampanga District Hospitals</h2>
         <img
           class="image-hostpital"
           src="Assets/images/hostpital-maps.png"
           alt=""
         />
       </div>
-      <hr class="footer-ruler" />
-      <p class="copyright">
-        &copy; 2024 Joseph Gabriel Castro, Jennilyn Baun, Enersson Macaburas,
-        Ralph Lawrence Soliman, Knitchel Doctor. All rights reserved.
-      </p>
+      <div class="container-copyright">
+        <hr class="footer-ruler" />
+        <p class="copyright">
+          &copy; 2024 Joseph Gabriel Castro, Jennilyn Baun, Enersson Macaburas,
+          Ralph Lawrence Soliman, Knitchel Doctor. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
