@@ -31,6 +31,7 @@ a {
     rgba(182, 125, 125, 0.38) 24.5%,
     rgba(90, 90, 90, 0.06) 100%
   );
+  overflow: hidden;
 }
 .video-introduction {
   object-fit: cover;
@@ -68,16 +69,69 @@ a {
   color: white;
   font-size: 1.2rem;
 }
+.nav-header-main-item:hover {
+  transform: scale(120%);
+}
 .icon {
   width: 1.875rem;
   height: 1.875rem;
 }
+.menu-items {
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.7);
+  list-style: none;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 40%;
+  z-index: 1;
+  top: 6rem;
+  right: -2%;
+}
+.menu-item {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  color: #fff;
+  align-items: center;
+  padding-left: 5%;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+#menu {
+  position: absolute;
+  width: 5rem;
+  right: 5%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#icon-menu {
+  display: block;
+  margin: 0;
+  width: 4rem;
+}
+#icon-menu:hover {
+  transform: scale(110%);
+}
 #search {
+  position: absolute;
+  right: 5%;
   width: 6.25rem;
   height: 6.25rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+#search:hover {
+  transform: scale(110%);
 }
 #icon-search {
   width: 3.125rem;
@@ -118,4 +172,18 @@ a {
 #form-search-icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+@media (max-width: 1200px) {
+  .nav-header-main {
+    display: none;
+  }
+  .header-form-search {
+    width: 80%;
+  }
+  #search {
+    display: none;
+  }
+  #menu {
+    display: flex;
+  }
 }

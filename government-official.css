@@ -89,9 +89,25 @@
   z-index: -1;
   bottom: 1rem;
 }
-
-#governor-img {
+.governor-img-mobile {
+  margin: auto;
+  display: none;
+}
+.governor-img {
   display: block;
   margin: auto;
   z-index: 1;
+}
+@media (max-width: 1100px) {
+  .container-government-official {
+    flex-direction: column;
+    align-items: center;
+  }
+  .governor-img {
+    display: none;
+    width: 0.8vw;
+  }
+  .governor-img-mobile {
+    display: block;
+  }
 }

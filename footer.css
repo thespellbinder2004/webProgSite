@@ -1,5 +1,47 @@
 footer {
+  font-family: "Open Sans";
   margin-top: 10rem;
-  height: 30rem;
+
   background-color: #551313;
+  color: white;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 2% 10% 8%;
+  gap: 20%;
+}
+.phone-icon {
+  width: 1rem;
+  object-fit: cover;
+}
+.image-hostpital {
+  display: block;
+  width: 100%;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  /* justify-content: center; */
+}
+.footer-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.footer-ruler {
+  position: absolute;
+  bottom: 8%;
+  width: 80%;
+  margin-left: 10%;
+}
+.copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 1%;
+  text-align: center;
+}
+@media (max-width: 800px) {
 }
