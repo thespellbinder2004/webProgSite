@@ -187,3 +187,36 @@ a {
     display: flex;
   }
 }
+@media (max-width: 800px) {
+  .container-header-main {
+    height: 50vh;
+  }
+  #menu {
+    width: 2rem;
+  }
+  .container-header-main-nav {
+    margin-top: 0;
+  }
+  #icon-menu {
+    width: 2rem;
+  }
+  .logo {
+    width: 4rem;
+  }
+  .header-form-search {
+    top: 45%;
+  }
+  .menu-items {
+    top: 4rem;
+    width: 50%;
+  }
+  .menu-item {
+    font-size: 1rem;
+    padding: 0 0 0 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .menu-items {
+    width: 70%;
+  }
+}
