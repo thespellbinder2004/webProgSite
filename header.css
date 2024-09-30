@@ -53,15 +53,16 @@ a {
 
 .logo {
   width: 6.25rem;
-  height: 6.25rem;
 }
 .nav-header-main {
+  padding: 0;
   margin: auto;
   width: 70%;
   display: flex;
   list-style-type: none;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 .nav-header-main-item {
   width: 8rem;
@@ -122,8 +123,6 @@ a {
   transform: scale(110%);
 }
 #search {
-  position: absolute;
-  right: 5%;
   width: 6.25rem;
   height: 6.25rem;
   display: flex;
@@ -195,7 +194,7 @@ a {
     width: 2rem;
   }
   .container-header-main-nav {
-    margin-top: 0;
+    margin-top: 5%;
   }
   #icon-menu {
     width: 2rem;
